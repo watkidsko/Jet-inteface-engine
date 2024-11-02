@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jet Engine Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jet Engine Interface</h1>
+        <div class="gauge-container">
+            <div class="gauge" id="rpm-gauge">
+                <div class="needle" id="rpm-needle"></div>
+                <div class="gauge-label">RPM</div>
+            </div>
+            <div class="gauge" id="temp-gauge">
+                <div class="needle" id="temp-needle"></div>
+                <div class="gauge-label">Temperature</div>
+            </div>
+            <div class="gauge fuel">
+                <div class="fuel-bar" id="fuel-bar"></div>
+                <div class="gauge-label">Fuel Level</div>
+            </div>
+        </div>
+        <button onclick="increaseRPM()">Increase RPM</button>
+        <button onclick="decreaseRPM()">Decrease RPM</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
